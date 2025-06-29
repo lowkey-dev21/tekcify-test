@@ -1,21 +1,21 @@
 import type { Testimonial } from "@/types/app";
 
 export const avatars = [
-  "/assets/avatars/sarahchen.webp",
-  "/assets/avatars/alexrivera.webp",
-  "/assets/avatars/emilyzhang.webp",
-  "/assets/avatars/marcusthompson.webp",
-  "/assets/avatars/lisapatel.webp",
-  "/assets/avatars/davidkim.webp",
+  "/sarahchen.webp",
+  "/alexrivera.webp",
+  "/emilyzhang.webp",
+  "/marcusthompson.webp",
+  "/lisapatel.webp",
+  "/davidkim.webp",
 ];
 
 export const icons = {
-  pdfx: "/assets/icons/pdfx.webp",
-  binx: "/assets/icons/binx.webp",
-  campux: "/assets/icons/campux.webp",
-  instagram: "/assets/icons/instagram.svg",
-  twitter: "/assets/icons/twitter.svg",
-  tiktok: "/assets/icons/tiktok.svg",
+  pdfx: "/pdfx.webp",
+  binx: "/binx.webp",
+  campux: "/campux.webp",
+  instagram: "/instagram.svg",
+  twitter: "/twitter.svg",
+  tiktok: "/tiktok.svg",
 };
 
 export const testimonials: Testimonial[] = [

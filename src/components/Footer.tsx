@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
           {/* Logo & Description */}
           <div className="lg:col-span-3 order-1">
             <Image
-              src="/assets/logo.svg"
+              src="/logo.svg"
               alt="Tekcify"
               width={120}
               height={40}

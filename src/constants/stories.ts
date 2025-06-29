@@ -2,7 +2,7 @@ import type { Story } from "@/types/app";
 
 export const stories: Story[] = [
   {
-    image: "/assets/sarah.svg",
+    image: "/sarah.svg",
     alt: "Admon",
     quote: "Binx AI transformed how I manage my content creation workflow",
     author: "Admon",
@@ -15,7 +15,7 @@ export const stories: Story[] = [
     ],
   },
   {
-    image: "/assets/henry.svg",
+    image: "/henry.svg",
     alt: "John",
     quote: "PDFX made document management effortless for my team.",
     author: "John",

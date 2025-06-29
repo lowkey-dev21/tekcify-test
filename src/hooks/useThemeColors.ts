@@ -44,12 +44,12 @@ export function useThemeColors(): UseThemeColorsReturn {
     textSwitch: resolvedTheme === "dark" ? "text-black" : "text-white",
     textGradient:
       resolvedTheme === "dark"
-        ? "bg-gradient-to-r from-white to-purple-500 bg-clip-text text-transparent"
-        : "bg-gradient-to-r from-gray-900 to-purple-500 bg-clip-text text-transparent",
+        ? "bg-gradient-to-r from-white to-[#7c3bee]  bg-clip-text text-transparent"
+        : "bg-gradient-to-r from-gray-900 to-[#7c3bee]  bg-clip-text text-transparent",
     textMixedGradient:
       resolvedTheme === "dark"
         ? "bg-gradient-to-r from-white to-white bg-clip-text text-transparent"
-        : "bg-gradient-to-r from-gray-900 to-purple-500 bg-clip-text text-transparent",
+        : "bg-gradient-to-r from-gray-900 to-[#7c3bee]  bg-clip-text text-transparent",
     textPrimary:
       resolvedTheme === "dark" ? "text-purple-500" : "text-purple-500",
     textSecondary: resolvedTheme === "dark" ? "text-gray-300" : "text-gray-600",
@@ -73,7 +73,7 @@ export function useThemeColors(): UseThemeColorsReturn {
       textSwitch:
         resolvedTheme === "dark" ? "text-gray-400 " : "bg-white text-gray-700 ",
 
-      icon: resolvedTheme === "dark" ? "text-gray-400 " : "text-purple-500 ",
+      icon: resolvedTheme === "dark" ? "text-gray-400 " : "text-[#7c3bee]  ",
     },
 
     hover: resolvedTheme === "dark" ? "hover:bg-gray-800" : "hover:bg-gray-100",

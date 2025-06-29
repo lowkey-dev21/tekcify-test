@@ -106,7 +106,7 @@ export default function SmoothFollower() {
   return (
     <div className=" hidden md:flex pointer-events-none fixed inset-0 z-50">
       <div
-        className="absolute rounded-full dark:bg-purple-500  bg-purple-500/60"
+        className="absolute rounded-full dark:bg-[#7c3bee]   bg-purple-500/60"
         style={{
           width: "10px",
           height: "10px",

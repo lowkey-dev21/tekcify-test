@@ -2,13 +2,13 @@ import { useThemeColors } from "@/hooks/useThemeColors";
 import Image from "next/image";
 
 const logos = [
-  { alt: "Google", src: "/assets/brands/google.webp" },
-  { alt: "Meta", src: "/assets/brands/meta.webp" },
-  { alt: "WhatsApp", src: "/assets/brands/whatsapp.webp" },
-  { alt: "Microsoft", src: "/assets/brands/microsoft.webp" },
-  { alt: "AWS", src: "/assets/brands/aws.webp" },
-  { alt: "Microsoft Azure", src: "/assets/brands/ms-azure.webp" },
-  { alt: "Cardri", src: "/assets/brands/cardri.webp" },
+  { alt: "Google", src: "/google.png" },
+  { alt: "Meta", src: "/meta.png" },
+  { alt: "WhatsApp", src: "/whatsapp.png" },
+  { alt: "Microsoft", src: "/microsoft.png" },
+  { alt: "AWS", src: "/aws.png" },
+  { alt: "Microsoft Azure", src: "/ms-azure.png" },
+  { alt: "Cardri", src: "/cardri.png" },
 ];
 
 const BrandLogos: React.FC = () => {

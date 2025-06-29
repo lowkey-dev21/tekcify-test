@@ -24,7 +24,7 @@ const nextConfig: NextConfig = {
         ],
       },
       {
-        source: "/assets/(.*)",
+        source: "/(.*)",
         headers: [
           {
             key: "Cache-Control",

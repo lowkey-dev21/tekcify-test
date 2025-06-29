@@ -25,25 +25,21 @@ export const features = [
 
 export const images = [
   {
-    src: "/assets/ai-solution.webp",
+    src: "/ai-solution.webp",
     label: "AI Solutions",
   },
   {
-    src: "/assets/digital-girl.webp",
+    src: "/digital-girl.webp",
     label: "Simplified digital presence",
   },
   {
-    src: "/assets/friendly-community.webp",
+    src: "/friendly-community.webp",
     label: "Friendly Community",
   },
   {
-    src: "/assets/future-tech.webp",
+    src: "/future-tech.webp",
     label: "Future Tech",
   },
 ];
 
-export const communityAvatars = [
-  "/assets/sarah.svg",
-  "/assets/muniz.svg",
-  "/assets/henry.svg",
-];
+export const communityAvatars = ["/sarah.svg", "/muniz.svg", "/henry.svg"];

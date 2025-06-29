@@ -10,7 +10,7 @@ const Logo: React.FC = () => {
     <div className="flex items-center gap-2">
       <Image
         className={isDark ? "invert" : ""}
-        src="/assets/logo.svg"
+        src="/logo.svg"
         alt="Teckify logo"
         width={100}
         height={20}

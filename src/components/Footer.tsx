@@ -33,7 +33,7 @@ const Footer: React.FC = () => {
                   placeholder="Enter your email"
                   className="w-full px-4 py-3 bg-[#222] border border-[#333] rounded-xl text-sm placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-purple-500"
                 />
-                <button className="w-full px-4 py-3 bg-purple-500 hover:bg-primary-500 rounded-xl text-sm font-medium transition-colors">
+                <button className="w-full px-4 py-3 bg-[#7c3bee]  hover:bg-primary-500 rounded-xl text-sm font-medium transition-colors">
                   Subscribe to Newsletter
                 </button>
               </div>

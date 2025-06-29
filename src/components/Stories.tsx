@@ -145,7 +145,7 @@ const Stories: React.FC = () => {
                 key={idx}
                 className={`w-2.5 h-2.5 rounded-full transition-all ${
                   idx === current
-                    ? "bg-purple-500 w-8"
+                    ? "bg-[#7c3bee]  w-8"
                     : "bg-gray-300  hover:bg-gray-400"
                 }`}
                 aria-label={`Go to slide ${idx + 1}`}

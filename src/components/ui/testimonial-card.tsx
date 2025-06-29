@@ -1,6 +1,7 @@
 import React from "react";
 import { useThemeColors } from "@/hooks/useThemeColors";
 import type { Testimonial } from "@/types/app";
+import Image from "next/image";
 
 interface TestimonialCardProps extends Testimonial {}
 
@@ -18,11 +19,15 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
       className={`${colors.card.text} rounded-2xl ${colors.border} p-7 flex flex-col gap-4 min-h-[220px] transform transition-transform duration-150 hover:scale-105`}
     >
       <div className="flex items-center gap-3">
-        <img
-          src={avatar}
-          alt={name}
-          className="w-12 h-12 rounded-full object-cover border-2 border-gray-200"
-        />
+        <div className="relative w-12 h-12 rounded-full border-2 border-gray-200">
+          <Image
+            src={avatar}
+            alt={name}
+            fill
+            className="object-cover rounded-full"
+            sizes="48px"
+          />
+        </div>
         <div>
           <div className={` ${colors.card.title}`}>{name}</div>
           <div className="text-gray-500 text-sm">{username}</div>
@@ -30,12 +35,15 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
         <div className="flex-1" />
         <div className="flex gap-2 text-gray-400">
           {icons.map((icon, idx) => (
-            <img
-              key={idx}
-              src={icon}
-              alt="icon"
-              className={` ${isDark ? "invert" : ""} w-5 h-5`}
-            />
+            <div key={idx} className="relative w-5 h-5">
+              <Image
+                src={icon}
+                alt="icon"
+                fill
+                className={`object-contain ${isDark ? "invert" : ""}`}
+                sizes="20px"
+              />
+            </div>
           ))}
         </div>
       </div>

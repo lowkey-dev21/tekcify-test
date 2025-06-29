@@ -2,6 +2,7 @@ import { useThemeColors } from "@/hooks/useThemeColors";
 import { ChevronRight } from "lucide-react";
 import { products } from "@/constants/products";
 import type { Product } from "@/types/app";
+import Image from "next/image";
 
 const Explore: React.FC = () => {
   const { colors } = useThemeColors();
@@ -55,12 +56,16 @@ const Explore: React.FC = () => {
               {/* Overlay */}
               <div className="absolute inset-0 bg-black/30 group-hover:bg-black/70 transition-colors"></div>
               {/* Product Image */}
-              <img
-                alt={prod.name}
-                src={prod.image}
-                className="w-full aspect-square object-cover group-hover:scale-105 transition-transform duration-500"
-                loading="lazy"
-              />
+              <div className="relative w-full aspect-square">
+                <Image
+                  alt={prod.name}
+                  src={prod.image}
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  priority={idx === 0}
+                />
+              </div>
               {/* Content */}
               <div className="absolute inset-0 p-6 flex flex-col justify-end">
                 <h3 className="text-xl font-semibold text-white mb-2">

@@ -1,6 +1,7 @@
 import { ChevronRight } from "lucide-react";
 import { features, images, communityAvatars } from "@/constants/whyus";
 import { useThemeColors } from "@/hooks/useThemeColors";
+import Image from "next/image";
 
 interface Feature {
   title: string;
@@ -86,11 +87,13 @@ const WhyUs: React.FC = () => {
                   key={img.src}
                   className="group aspect-square rounded-2xl overflow-hidden relative"
                 >
-                  <img
+                  <Image
                     alt={img.label}
                     src={img.src}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                    loading="lazy"
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                    sizes="(max-width: 640px) 50vw, 25vw"
+                    priority={idx === 0}
                   />
                   <div className="absolute inset-0 bg-black/60 group-hover:bg-black/40 transition-colors">
                     <div className="absolute bottom-4 left-4 text-white">
@@ -118,13 +121,14 @@ const WhyUs: React.FC = () => {
                         {typedAvatars.map((src, i) => (
                           <div
                             key={i}
-                            className="inline-block h-6 w-6 rounded-full ring-2 ring-[#111]"
+                            className="relative inline-block h-6 w-6 rounded-full ring-2 ring-[#111]"
                           >
-                            <img
+                            <Image
                               alt="User"
                               src={src}
-                              className="h-full w-full object-cover"
-                              loading="lazy"
+                              fill
+                              className="object-cover rounded-full"
+                              sizes="24px"
                             />
                           </div>
                         ))}

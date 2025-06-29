@@ -26,11 +26,15 @@ const BrandLogos: React.FC = () => {
             key={logo.alt + idx}
             className="flex items-center justify-center min-w-[160px] sm:min-w-[200px] md:min-w-[240px] px-4 sm:px-6 md:px-8"
           >
-            <img
-              alt={logo.alt}
-              src={logo.src}
-              className="h-6 sm:h-7 md:h-8 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity"
-            />
+            <div className="relative h-6 sm:h-7 md:h-8 w-auto">
+              <Image
+                alt={logo.alt}
+                src={logo.src}
+                fill
+                className="object-contain opacity-90 hover:opacity-100 transition-opacity"
+                sizes="(max-width: 640px) 160px, (max-width: 768px) 200px, 240px"
+              />
+            </div>
           </div>
         ))}
       </div>

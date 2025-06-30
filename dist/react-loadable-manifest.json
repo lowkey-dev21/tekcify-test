@@ -1,8 +1,8 @@
 {
   "components/HeroSection.tsx -> @/components/ui/background-strokes": {
-    "id": 6945,
+    "id": "components/HeroSection.tsx -> @/components/ui/background-strokes",
     "files": [
-      "static/chunks/945.7a871dddec3109fb.js"
+      "static/chunks/_app-pages-browser_src_components_ui_background-strokes_tsx.js"
     ]
   }
 }

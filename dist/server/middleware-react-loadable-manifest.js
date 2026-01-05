@@ -1,0 +1,1 @@
+self.__REACT_LOADABLE_MANIFEST="{\"components/HeroSection.tsx -> @/components/ui/background-strokes\":{\"id\":\"components/HeroSection.tsx -> @/components/ui/background-strokes\",\"files\":[\"static/chunks/_app-pages-browser_src_components_ui_background-strokes_tsx.js\"]}}"

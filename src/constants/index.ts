@@ -7,15 +7,15 @@ interface NavlinksI {
 const navLinks: NavlinksI[] = [
   {
     name: "Products",
-    href: "https://tekcify.com/products",
+    href: "#",
   },
   {
     name: "About",
-    href: "https://tekcify.com/about",
+    href: "#",
   },
   {
     name: "Privacy",
-    href: "https://tekcify.com/privacy",
+    href: "#",
   },
 ];
 
